@@ -1,0 +1,189 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(fonts/OpenSans-VariableFont_wdth,wght.ttf);
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url(fonts/Oswald-VariableFont_wght.ttf);
+}
+
+body {
+    margin: 0;
+	font-family: "Open Sans", Times, serif;
+	max-width: 2200px;
+  }
+  
+div.content {
+	margin-left: 116px;
+	/*width: 100%;*/
+}
+
+.header {
+	margin: 0px;
+	padding: 20px;
+}
+  
+  ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 116px;
+    background-color: #500000;
+    position: fixed;
+    height: 100%;
+  }
+  
+  li.nav a {
+    width: 116px;
+    color: white;
+    padding: 16px 16px;
+    text-decoration: none;
+    height: 116px;
+    text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+  }
+  
+  li.nav a.active {
+    background-color: #3C0000;
+    color: white;
+  }
+  
+  li.nav a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+li.nav a.fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 116px;
+  color: white;
+  padding: 16px 16px;
+  text-decoration: none;
+  height: 116px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: bottom;
+}
+  
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+  
+a.quick {
+	color: black;
+}
+  
+  .container {
+    padding: 2px 16px;
+  }
+  
+ * {
+  box-sizing: border-box;
+}
+
+.block {
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin: 20px;
+  float: left;
+  width: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  outline-style: solid;
+  outline-color:#500000;
+  cursor: pointer;
+}
+
+.block:hover {
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.5);
+  }
+
+
+div.block h4 {
+	font-size: 16px;
+	text-align: center;
+}
+
+.main-column {
+  float: left;
+  width: 70%;
+  padding: 10px;
+}
+.feed-column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  background-color: white;
+}
+
+div.side-bar {
+  float: left;
+  padding: 10px;
+}
+
+.collapsible {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+}
+
+.collapse-content {
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 1300px) {
+  .block {
+    width: 40%;
+  }
+  
+  .main-column {
+    float: left;
+    width: 90%;
+    padding: 10px;
+  }
+
+  .feed-column {
+    float: left;
+    width: 90%;
+    padding: 10px;
+    background-color: white;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .block {
+    width: 100%;
+  }
+  
+  .main-column {
+    float: left;
+    width: 90%;
+    padding: 10px;
+  }
+
+  .feed-column {
+    float: left;
+    width: 90%;
+    padding: 10px;
+    background-color: white;
+  }
+
+}
