@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ReHowdy Records</title>
+    <link rel="stylesheet" href="records.css">
+</head>
+<body>
+
+	<ul class="nav">
+	  <li class="nav"><img src="images/TAM-Logo-whitebkgrd.png" alt="TAMU Logo" width="116" height="116"></li>
+	  <li class="nav"><a class="active" href="#Dashboard">Dashboard</a></li>
+	  <li class="nav"><a href="#Records">Records</a></li>
+	  <li class="nav"><a href="#Finances">Finances</a></li>
+	  <li class="nav"><a href="#Student Life">Student Life</a></li>
+	  <li class="nav"><a href="#Research">Research</a></li>
+	  <li class="nav"><a class="fixed" href="#Logout">Logout</a></li>
+	</ul>
+	
+	<div class="content row">
+		<h1 class="header">ReHowdy Records</h1>
+		<hr style="width: 95%;"></hr>
+		<div class="main-column">
+			<a class="quick">
+				<div class="block">
+					<!-- <img src="images/schedule_2.png" alt="Avatar" style="width:100%"> -->
+					<div class="container">
+						<h4><b class ="nothovering">Grades and Transcripts</b></h4> 
+                        <b class="hovering">
+                            <ul>
+                                <li>Grades</li>
+                                <li>Unofficial Transcript</li>
+                                <li>View Unofficial Transcript (PDF)</li>
+                                <li>Credit By Examination</li>
+                                <li target="_blank" href="https://compassxe-ssb.tamu.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=authsearch">TSI and Core Curriculum</li>
+                            </ul> 
+                        </b>
+					</div>
+				</div>
+			</a>
+			
+			<a class="quick" target="_blank" href="https://compassxe-ssb.tamu.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=authsearch">
+				<div class="block">
+					<!-- <img src="images/class_search_2.png" alt="Avatar" style="width:100%"> -->
+					<div class="container">
+						<h4><b>Parent Guardian Access</b></h4> 
+					</div>
+				</div>
+			</a>
+
+			<a class="quick" target="_blank" href="https://compassxe-ssb.tamu.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=authsearch">
+				<div class="block">
+					<!-- <img src="images/registration_2.png" alt="Avatar" style="width:100%"> -->
+					<div class="container">
+						<h4><b>Registration</b></h4> 
+					</div>
+				</div>
+			</a>
+				
+			<a class="quick" target="_blank" href="https://compassxe-ssb.tamu.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=authsearch">
+				<div class="block">
+					<!-- <img src="images/degree_planner_2.png" alt="Avatar" style="width:100%"> -->
+					<div class="container">
+						<h4><b>Degree Evaluation</b></h4> 
+					</div>
+				</div>
+			</a>
+			
+			<a class="quick" target="_blank" href="https://canvas.tamu.edu/">	
+				<div class="block">
+					<!-- <img src="images/canvas_2.png" alt="Avatar" style="width:100%"> -->
+					<div class="container">
+						<h4><b>Advising Appointments</b></h4> 
+					</div>
+				</div>
+			</a>
+			
+			<a class="quick" target="_blank" href="https://compassxe-ssb.tamu.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=authsearch">
+				<div class="block">
+					<!-- <img src="images/grades_2.png" alt="Avatar" style="width:100%"> -->
+					<div class="container">
+						<h4><b>My Schedule</b></h4> 
+					</div>
+				</div>
+			</a>
+			
+			<a class="quick" target="_blank" href="https://compassxe-ssb.tamu.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=authsearch">
+				<div class="block">
+					<!-- <img src="images/tuitionpay_2.png" alt="Avatar" style="width:100%"> -->
+					<div class="container">
+						<h4><b>Undergraduate Degree Planner</b></h4> 
+					</div>
+				</div>
+			</a>
+			
+			<a class="quick" target="_blank" href="https://compassxe-ssb.tamu.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=authsearch">
+				<div class="block">
+					<!-- <img src="images/finaid_2.png" alt="Avatar" style="width:100%"> -->
+					<div class="container">
+						<h4><b>Change of Major Requests</b></h4> 
+					</div>
+				</div>
+			</a>
+		</div>
+		
+
+		<div class="feed-column">
+			<button type="button" style="background-color: white;" class="collapsible">
+				<h2>Notifications: &#9660;</h2>
+				<hr style="margin:0px;"></hr>
+			</button>
+			<div class="collapse-content">
+				<ul>
+				  <li>Your registration time is 11/4/21 at 3pm EST.</li>
+				  <li>Please complete your Howdy Checklist before registration.</li>
+				  <li>Your degree planner is due 10/15/21 at 6pm EST.</li>
+				</ul>
+			</div>
+			<br></br>
+			<button type="button" style="background-color: white;" class="collapsible">
+				<h2>News/Events: &#9660;</h2>
+				<hr style="margin:0px;"></hr>
+			</button>
+			<div class="collapse-content">
+				<ul>
+				  <li>Texas A&M named 20-Year top producer of Gilman Scholars.</li>
+				  <li>Movie Screening: Death of Captain Pilecki at MSC.</li>
+				  <li>Aggie Football Gameday: vs Auburn at 11/6/21 at 11am EST.</li>
+				</ul>
+			</div>
+			
+		</div>
+
+	</div>
+	
+	<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+		var content = this.nextElementSibling;
+		if (content.style.display === "none") {
+		  content.style.display = "block";
+		} else {
+		  content.style.display = "none";
+		}
+	  });
+	}
+	</script>
+
+</body>
+</html>
+
