@@ -99,22 +99,26 @@ a.quick {
   cursor: pointer;
 }
 
-b.hovering {
+.collapse-content-1 {
+  display: none;
+}
+
+/* .hovering {
     display: none;
 }
 
-b.nothovering:hover {
+.nothovering .block:hover {
     display: none;
-}
+} */
 
 .block:hover {
     box-shadow: 0 8px 32px 0 rgba(0,0,0,0.5);
     display: block;
 }
 
-h4:hover + b.hovering {
+/* h4:hover + b.hovering {
     display: block;
-}
+} */
 
 div.block h4 {
 	font-size: 16px;
@@ -138,7 +142,7 @@ div.side-bar {
   padding: 10px;
 }
 
-.collapsible {
+.show_content {
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -147,9 +151,9 @@ div.side-bar {
   outline: none;
 }
 
-.collapse-content {
+.collapse-content-1 {
   padding: 0 18px;
-  display: block;
+  display: none;
   overflow: hidden;
 }
 
