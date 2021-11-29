@@ -127,7 +127,7 @@ div.block h4 {
 
 .main-column {
   float: left;
-  width: 70%;
+  width: 100%;
   padding: 10px;
 }
 .feed-column {
@@ -164,7 +164,7 @@ div.side-bar {
   clear: both;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1600px) {
   .block {
     width: 40%;
   }

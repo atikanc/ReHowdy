@@ -153,6 +153,12 @@ div.block h4 {
   padding: 10px;
 }
 
+.main-column-alt {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
 .feed-column {
   float: left;
   width: 25%;
