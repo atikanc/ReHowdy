@@ -203,6 +203,12 @@ div.side-bar {
     width: 90%;
     padding: 10px;
   }
+  
+  .main-column-alt {
+    float: left;
+    width: 90%;
+    padding: 10px;
+  }
 
   .feed-column {
     float: left;
@@ -219,6 +225,12 @@ div.side-bar {
   }
 
   .main-column {
+    float: left;
+    width: 90%;
+    padding: 10px;
+  }
+  
+  .main-column-alt {
     float: left;
     width: 90%;
     padding: 10px;
